@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link id="linkCss" rel="stylesheet" href="styles/light.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    <title>GifOS</title>
+</head>
+<body>
+    <div class="presentacionDiv">
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </div>
+    <header>
+        <div class="imgCont">
+            <img src="./assets/arrow.svg" alt="flecha atras" class="arrow" id="arrow">
+            <img class="logoGifOS" src="./assets/gifOF_logo.png" alt="Logo GifOS" id="logoGo">
+            <img class="logoGifOSDark" src="./assets/gifOF_logo_dark.png" alt="Logo GifOS" id="logoGo1">
+        </div>
+        <div class="botones">
+            <div class="boton-crearGifOs" id="boton-crearGifOs">
+                <p>Crear Guifos</p>
+            </div>
+            <div class="boton-elegirTema" id="boton-elegirTema">
+                <div class="flexElegirTema" id="botonElegirTemaPress">
+                    <div class="boton-elegirTemaTexto">
+                        <p class="elegirTema">Elegir tema</p>
+                    </div>
+                    <div class="boton-elegirTemaDropDown">
+                        <div class="dottedDropDown">
+                            <iframe class="dropDown" src="./assets/dropdown.svg"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropDown-Content" id="dropDown-Content">
+                    <div class="sailorDay" id="sailorDay">
+                        <p>Sailor Day</p>
+                    </div>
+                    <div class="sailorNight" id="sailorNight">
+                        <p>Sailor Night</p>
+                    </div>
+                </div>
+            </div>
+            <div class="boton-MisGifOS" id="boton-MisGifOS">
+                <p><span class="underline">M</span>is Guifos</p>
+            </div>
+        </div>
+    </header>
+
+
+        <section class="buscador" id="buscador">
+                <div class="buscador-buscar">
+                    <h3>Buscar</h3>
+                </div>
+                <div class="buscador-buscar-bottom">
+                    <input required class="buscador-input" id="buscador-input" type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                    <div class="buscador-boton" id="botonBuscar">
+                        <iframe class="lupaNight" src="./assets/lupa_light.svg" ></iframe>
+                        <iframe class="lupa" src="./assets/lupa.svg" ></iframe>
+                        <iframe class="lupaInactiva" src="./assets/lupa_inactive.svg" ></iframe>
+                        <iframe class="lupaNightInactiva" src="./assets/Combined_Shape.svg" ></iframe>
+                        <p>Buscar</p>
+                    </div>
+                </div>
+                <div id="contBusquedasSug">
+                    <div class="sugg"><p id="sugUno"></p></div>
+                    <div class="sugg"><p id="sugDos"></p></div>
+                    <div class="sugg"><p id="sugTres"></p></div>
+                </div>
+        </section>
+
+        <div class="tags-guardados" id="tags-guardados"></div>
+
+        <section class="resultados" id="resultados">
+            <h3 class="resultadosH3">resultados</h3>
+            <div id="contResultados">
+                <div class="resultadosHoy">
+                    <p id="resText"></p>
+                </div>
+                <div class="contenedorTendencias" id="contResGrid">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="sugeridos" id="sugeridos">
+            <div class="sugerenciasHoy">
+                <h3>Hoy te sugerimos:</h3>
+            </div>
+            <div class="sugerenciasCards" id="sugerenciasCards">
+
+            </div>
+        </section>
+
+        <section class="tendencias" id="tendencias">
+            <div class="tendenciasHoy">
+                <h3>Tendencias:</h3>
+            </div> 
+            <div class="contenedorTendencias" id="contTendGrid">
+
+            </div>
+        </section>
+
+
+        <section class="crearGifOs" id="crearGifOs">
+            <div class="pantalla-CrearGifOs" id="pantalla-CrearGifOs">
+                <div class="titulo-CrearGifOs">
+                    <h3 id="crearGifOs-texto">Crear Guifos</h3>
+                    <img id="button3CrearGifOs" src="./assets/button3.svg" alt="">
+                </div>
+                <div class="contenedor-videoGifOs" id="contenedor-videoGifOs">
+                    <video src="./assets/original.gif" id="videoGifTag" class="videoGifTag"></video>
+                    <video id="gifPreview" class="gifPreview" src="./assets/original.gif"></video>
+                    <div class="contenedorSubiendoGuifo" id="contenedorSubiendoGuifo">
+                        <img src="./assets/globe_img.png" alt="globe image">
+                        <p class="textoSubiendoGuifo">Estamos subiendo tu guifo…</p>
+                        <div class="contenedorCargaSubirGuifo">
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                            <span class="barraCargaSubirGuifo"></span>
+                        </div>
+                        <p class="subTituloSubirGuifo">Tiempo restante: <span class="tachado">38 años</span> algunos minutos</p>
+                    </div>
+                </div>
+                <div class="contenedorGuifoSubido" id="contenedorGuifoSubido">
+                    <div class="contenedorImgBotonesGuifoSubido">
+                        <img id="previewGuifo" class="previewGuifo" src="./assets/original.gif" alt="preview">
+                        <div class="contenedorBotonesGuifoSubido">
+                            <p class="textoBotonesGuifoSubido">Guifo creado con exito</p>
+                            <div class="botonGuifoSubido" id="botonCopiarGuifoSubido">
+                                <p>Copiar Enlace Guifo</p>                 
+                            </div>
+                            <div class="botonGuifoSubido" id="botonDescargarGuifoSubido">
+                                <p>Descargar Guifo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botonListoGuifoSubido" id="botonListoGuifoSubido">
+                        <p>Listo</p>
+                    </div>
+                </div>
+                <div class="contenedor-imgText" id="contenedor-imgText">
+                    <img class="img-window" src="./assets/window_img.png" alt="window img">
+                    <div>
+                        <p class="subtitulo-CrearGifOs">
+                            Aquí podrás crear tus propios guifos
+                        </p>
+                        <div class="texto-CrearGifOs">
+                            <p>
+                                Crear tu <b>guifo</b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:
+                            </p> 
+                            <ul class="list-CrearGifOs">
+                                <li><b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</li>
+                                <li><b>2)</b> Capturar tu momento guifo</li>
+                                <li><b>3)</b> Revisar el momento</li>
+                                <li><b>4)</b> Listo para subir y compartir!</li>
+                            </ul>
+                            <p>
+                                ¿Quieres comenzar a crear tu <b>guifo</b> ahora?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-botones-videoGifOs" id="cont-botones-videoGifOs">
+                    <div class="cont-botones-vistaP" id="cont-botones-vistaP">
+                        <div class="cont-numeros-vistaP" id="cont-numeros-vistaP">
+                            <p id="numeros-vistaP">00:00:10:03</p>
+                        </div>
+                        <div class="cont-play-barraCarga" id="cont-play-barraCarga">
+                            <div class="boton-play-vistaP" id="boton-play-vistaP">
+                                <img src="./assets/forward.svg" alt="forward">
+                            </div>
+                            <div class="barraCarga" id="barraCarga">
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                                <span class="barraCargaProgreso"></span>
+                            </div>
+                        </div>
+                        <div class="cont-repetir-subir" id="cont-repetir-subir">
+                            <div class="repetir-captura" id="repetir-captura">
+                                <p>Repetir Captura</p>
+                            </div>
+                            <div class="subir-guifo" id="subir-guifo">
+                                <p>Subir Guifo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boton-capturar" id="boton-capturar">
+                        <div class="img-capturar">
+                            <img src="./assets/camera.svg" alt="camara">
+                        </div>
+                        <div class="p-capturar" id="p-capturar">
+                            <p>Capturar</p>
+                        </div>
+                    </div>
+                    <div class="boton-detener" id="boton-detener">
+                        <div class="img-detener">
+                            <img src="./assets/recording.svg" alt="recording">
+                        </div>
+                        <div class="p-detener" id="p-detener">
+                            <p>Listo</p>
+                        </div>
+                    </div>
+                    <div class="cont-boton-cancelar-subir" id="cont-boton-cancelar-subir">
+                        <div class="boton-cancelar-subir" id="boton-cancelar-subir">Cancelar</div>
+                    </div>
+                </div>
+                <div class="cont-botones-CrearGifOs" id="cont-botones-CrearGifOs">
+                    <div class="boton-cancelar-CrearGifOs" id="boton-cancelar-CrearGifOs">
+                        Cancelar
+                    </div>
+                    <div class="boton-comenzar-CrearGifOs" id="boton-comenzar-CrearGifOs">
+                        Comenzar
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion 2 Mis GifOS-->
+        <section class="misGifOs" id="misGifOs">
+            <div class="titulo-misGifOs">
+                <h3>
+                    Mis guifos
+                </h3>
+            </div>
+            <!--Contenedor que muestra los gifs guardados en local storage-->
+            <div class="contenedorTendencias" id="contenedor-misGifOs">
+
+            </div>
+        </section>
+
+
+
+<script src="./scripts/script.js"></script>    
+</body>
+</html>

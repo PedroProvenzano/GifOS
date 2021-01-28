@@ -1,0 +1,117 @@
+@import url("./sections/buscador.css");
+@import url("./sections/header.css");
+@import url("./sections/tags-guardados.css");
+@import url("./sections/sugerencias.css");
+@import url("./sections/tendencias.css");
+@import url("./sections/crearGifOs.css");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+iframe {
+  border: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 85%;
+  max-width: 1250px;
+  margin: 35px 140px;
+}
+
+.underline {
+  border-bottom: 1px solid #110038;
+  display: inline;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 1px;
+}
+
+.presentacionDiv {
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  height: 23px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentacionDiv p {
+  margin-left: 8px;
+}
+
+.arrow {
+  display: none;
+  width: 24px;
+  height: 24px;
+  margin: 10px 10px 10px 0;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.logoGo {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.imgCont:hover {
+  cursor: pointer;
+}
+
+.imgCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

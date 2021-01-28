@@ -1,0 +1,437 @@
+.titulo-CrearGifOs{
+    margin: 3px;
+    height: 24px;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulo-CrearGifOs h3{
+    font-family: 'Chakra Petch', sans-serif;
+    margin-left: 4px;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: 800;
+    margin-left: 5px;
+}
+.titulo-CrearGifOs img{
+    display: none;
+    margin-right: 10px;
+}
+.crearGifOs{
+    display: none; // flex
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 153px;
+}
+.pantalla-CrearGifOs{
+    width: 684px;
+    height: 386px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1.5s;
+}
+.img-window{
+    display: inline;
+    margin: 30px 16px 0px 25px;
+    width: 32px;
+    height: 32px;
+}
+.subtitulo-CrearGifOs{
+    font-weight: 800;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 30px 0px 17px 0px;
+}
+.inline{
+    display: inline;
+    width: auto;
+}
+.contenedor-imgText{
+    display: flex;
+    flex-direction: row;
+}
+.contenedor-imgText div{
+    display: flex;
+    flex-direction: column;
+    width: 518px;
+}
+.texto-CrearGifOs{
+    font-size: 14px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+.cont-botones-CrearGifOs{
+    margin: 28px 0 35px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; 
+}
+ul.list-CrearGifOs{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.list-CrearGifOs li{
+    margin-top: 10px;
+}
+
+.misGifOs{
+    display: none;
+    margin-top: 0px;
+}
+
+.contenedor-videoGifOs{
+    margin-top: 11px;
+    align-self: center;
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    transition: all 2s;
+    width: 0px;
+    height: 0px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+// Botones tab de crear gifs
+.boton-cancelar-CrearGifOs,
+.boton-comenzar-CrearGifOs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 144px;
+    user-select: none;
+}
+
+
+.boton-cancelar-CrearGifOs:hover,
+.boton-comenzar-CrearGifOs:hover{
+    cursor: pointer;
+}
+
+.cont-botones-videoGifOs{
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 832px;
+}
+.boton-capturar,
+.boton-detener{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 180px;
+    height: 36px;
+    margin: 24px 16px 16px 0;
+}
+.boton-capturar{
+    margin-left: 652px;
+}
+.boton-capturar:hover,
+.boton-detener:hover{
+    cursor: pointer;
+}
+.boton-detener{
+    display: none;
+}
+.img-detener,
+.p-detener{
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+}
+.p-capturar,
+.img-capturar,
+.p-detener,
+.img-detener{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.p-capturar,
+.p-detener{
+    user-select: none;
+    width: 144px;
+    height: 36px;
+}
+.p-capturar p,
+.p-detener p{
+    margin-left: 39.5px;
+}
+.img-capturar,
+.img-detener{
+    height: 36px;
+    width: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-capturar img,
+.img-detener img{
+    width: 16.5px;
+    height: 18px;
+}
+.videoGifTag,
+.gifPreview{
+    display: flex;
+    align-self: center;
+    height: 425px;
+}
+.titulo-CrearGifOs img{
+    user-select: none;
+}
+.titulo-CrearGifOs img:hover{
+    cursor: pointer;
+}
+.gifPreview{
+    display: none;
+}
+
+// Etapa vista previa
+.cont-botones-vistaP{
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.cont-numeros-vistaP{
+    margin: 21px 24px 0 0px;
+    width: 124px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cont-numeros-vistaP p{
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+.boton-play-vistaP{
+    margin-top: 29px;
+    width: 20px;
+    height: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.boton-play-vistaP img{
+    width: 6px;
+    height: 10px;
+}
+.boton-play-vistaP:hover,
+.repetir-captura:hover,
+.subir-guifo:hover,
+.boton-cancelar-subir:hover{
+    cursor: pointer;
+}
+
+
+.cont-repetir-subir{
+    margin-left: 119px;
+    display: none;
+    //display: flex;
+    flex-direction: row;
+}
+.repetir-captura,
+.subir-guifo,
+.boton-cancelar-subir{
+    width: 144px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.repetir-captura,
+.boton-cancelar-subir{
+    user-select: none;
+    margin: 21px 14px 0px 0px;
+}
+
+.subir-guifo{
+    margin: 21px 0px 0px 0px;
+}
+.repetir-captura p,
+.subir-guifo p{
+    font-size: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+}
+.p-detener p{
+    color: white;
+}
+// Barra de carga
+.cont-play-barraCarga{
+    display: flex;
+    flex-direction: row;
+}
+.barraCarga{
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 28px 0 0 4px;
+    width: 240px;
+    height: 24px;
+    background: #B4B4B4;
+    box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+}
+.barraCargaProgreso{
+    background: #999999;
+    height: 20px;
+    width: 12px;
+    margin: 2px 0 0 2px;
+}
+
+// Pantalla Carga Subir Guifo
+.contenedorSubiendoGuifo{
+    display: none /*flex*/;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.textoSubiendoGuifo{
+    margin-top: 8px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
+.contenedorCargaSubirGuifo{
+    margin-top: 39px;
+    width: 324px;
+    height: 24px;
+    background: #B4B4B4;
+    box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.barraCargaSubirGuifo{
+    margin: 2px 0 2px 0;
+    background: #999999;
+    height: 20px;
+    width: 12px;
+}
+.subTituloSubirGuifo{
+    display: inline;
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgba(17,0,56,0.64);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+}
+.cont-boton-cancelar-subir{
+    display: none;
+    margin-left: 702px;
+}
+.tachado{
+    display: inline;
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgba(17,0,56,0.64);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+    text-decoration: line-through;
+}
+
+// Guifo subido con exito
+.contenedorGuifoSubido{
+    font-family: 'Chakra Petch', sans-serif;
+    width: 721px;
+    height: 364px;
+    display: none;//flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenedorImgBotonesGuifoSubido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contenedorBotonesGuifoSubido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 124px;
+    margin-left: 27px;
+}
+.textoBotonesGuifoSubido{
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+.botonGuifoSubido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 256px;
+    user-select: none;
+}
+.botonGuifoSubido p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+}
+.previewGuifo{
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    width: 365px;
+}
+.botonGuifoSubido:hover{
+    cursor: pointer;
+}
+.botonListoGuifoSubido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 144px;
+    height: 36px;
+    align-self: flex-end;
+    margin-right: 46px;
+}
+.botonListoGuifoSubido p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+}
+.titulo-misGifOs h3{
+    margin-left: 7px;
+}

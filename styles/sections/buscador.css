@@ -1,0 +1,150 @@
+.buscador,
+.resultados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85%;
+  max-width: 1250px;
+}
+
+.buscador-buscar {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 3px;
+}
+
+.buscador-buscar h3 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  padding: 6px;
+}
+
+.buscador-buscar-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12px 8px 12px 15px;
+}
+
+.buscador-input {
+  width: 95%;
+  height: 3rem;
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-right: 8px;
+}
+
+.lupa {
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+.lupaNight {
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+.lupaInactiva {
+  width: 16px;
+  height: 16px;
+}
+
+.lupaNightInactiva {
+  width: 16px;
+  height: 16px;
+}
+
+.buscador-boton {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 102px;
+  height: 36px;
+}
+
+.buscador-boton:hover {
+  cursor: pointer;
+}
+
+.buscador-boton:active {
+  outline: 1px dotted #110038;
+  outline-offset: -2px;
+}
+
+#contBusquedasSug {
+  display: none;
+  position: absolute;
+  top: 15.7rem;
+  width: 85%;
+  max-width: 1250px;
+  height: 160px;
+}
+
+.sugg {
+  height: 34px;
+  width: 85%;
+  border: 1px solid #808080;
+  margin-top: 15px;
+  margin-left: 13px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.sugg p {
+  font-family: ChakraPetch-Regular;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin: 6px 0 0 15px;
+}
+
+.sugg:hover {
+  outline: 1px dotted #110038;
+  outline-offset: -3px;
+  cursor: pointer;
+}
+
+.resultados {
+  display: none;
+  margin-top: 100px;
+}
+
+.resultadosH3 {
+  opacity: 0%;
+}
+/*# sourceMappingURL=buscador.css.map */
