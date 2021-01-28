@@ -57,10 +57,10 @@ const sugerenciasCards = document.getElementById("sugerenciasCards");
 const logoClick = document.getElementById("logoGo");
 const logoClickAlt = document.getElementById("logoGo1");
 logoClick.addEventListener('click', () => {
-    window.open("../index.html", "_self");
+    window.open("../GifOS/", "_self");
 });
 logoClickAlt.addEventListener('click', () => {
-    window.open("../index.html", "_self");
+    window.open("../GifOS/", "_self");
 });
 // Buscador
 const contResultados = document.getElementById("contResultado");
@@ -370,7 +370,7 @@ botonCrearGifOs.addEventListener('click', () => {
 
 // Boton de volver
 arrow.addEventListener('click', () => {
-    window.open("../index.html", "_self");
+    window.open("../GifOS/", "_self");
 });
 function reinicioCrearGifs(){
         // reinicia creador de gifs
