@@ -4,11 +4,13 @@ let url = "https://api.giphy.com/v1/";
 let Saves = {
     estadoActual: true
 };
-
+let arrayGuifos = [];
+let loadedGifs = [];
 if(localStorage.savedGifsArray)
 {
     let loadSavedGifs = JSON.parse(localStorage.getItem("savedGifsArray"));
     printSavedGifs(loadSavedGifs);
+    arrayGuifos = loadSavedGifs;
 }
 else
 {
@@ -769,9 +771,10 @@ async function downloadGuifo(id)
 // Guardar en localHost los gifOS
 function saveGifo(gif)
 {
-    let loadedGifs = JSON.parse(localStorage.getItem("savedGifsArray"));
+    loadedGifs = JSON.parse(localStorage.getItem("savedGifsArray"));
     loadedGifs.push(gif);
     let savedGifs = JSON.stringify(loadedGifs);
+    printSavedGifs(loadedGifs);
     localStorage.setItem("savedGifsArray", savedGifs);
 }
 
@@ -779,6 +782,7 @@ function saveGifo(gif)
 // Print Saved Gifs
 async function printSavedGifs(array)
 {
+    contenedorMisGuifos.innerHTML = '';
     for(let i of array)
     {
         fetch(`https://api.giphy.com/v1/gifs/${i}?api_key=${ApiKey}`)
