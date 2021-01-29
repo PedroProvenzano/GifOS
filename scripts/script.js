@@ -782,6 +782,7 @@ function saveGifo(gif)
 // Print Saved Gifs
 async function printSavedGifs(array)
 {
+    let contenedorMisGuifos = document.getElementById("contenedor-misGifOs");
     contenedorMisGuifos.innerHTML = '';
     for(let i of array)
     {
@@ -791,8 +792,7 @@ async function printSavedGifs(array)
             let div = document.createElement("div");
             let gif = document.createElement("img");
             gif.src = res.data.images.original.url;
-            div.appendChild(gif);
-            let contenedorMisGuifos = document.getElementById("contenedor-misGifOs");
+            div.appendChild(gif); 
             contenedorMisGuifos.appendChild(div);
         });
     }
